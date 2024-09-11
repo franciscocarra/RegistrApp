@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login_D</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="login-container">
+    <h1 class="login-title">Iniciar sesión</h1>
+
+    <div class="login-box">
+      <ion-list>
+        <ion-item lines="none">
+          <ion-label position="stacked" class="custom-label">Email</ion-label>
+          <ion-input
+            placeholder="Correo electronico"
+            type="email"
+            [(ngModel)]="nombre"
+            required
+          ></ion-input>
+          <ion-icon name="mail-outline" class="input-icon"></ion-icon>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label position="stacked" class="custom-label">Contraseña</ion-label>
+          <ion-input
+            placeholder="******"
+            type="password"
+            [(ngModel)]="password"
+            required
+          ></ion-input>
+          <ion-icon name="lock-closed-outline" class="input-icon"></ion-icon>
+        </ion-item>
+
+        <a class="forgot-password" href="#">Olvidaste Contraseña</a>`
+        
+          <ion-button  expand="block" (click)="validar()" class="login-button">Iniciar sesión</ion-button>
+
+          
+
+      </ion-list>
+    </div>
+  </div>
+</ion-content>
